@@ -1,0 +1,1 @@
+var server = require('./src/server/websocket-server').init();

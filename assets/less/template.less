@@ -1,0 +1,91 @@
+@black: #272822;
+@pink: #f92672;
+@green: #a6e22e;
+@blue: #66D9EF;
+@orange: #FD971F;
+body {
+    background-color: @black;
+    color: #fff;
+    font-family: "Courier New", Courier, monospace;
+}
+
+h1 {
+    color: @orange;
+    margin-left: 15px;
+}
+
+a {
+    color: @pink;
+    &:hover {
+        color: @green;
+    }
+}
+
+strong {
+    color: @green;
+}
+
+.container {
+    width: 100%;
+    @media (min-width: 768px) {
+        width: 700px;
+        margin: 0 auto;
+    }
+    @media (min-width: 1200px) {
+        width: 1024px;
+    }
+}
+
+.clearfix() {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.column {
+    width: 50%;
+    float: left;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.connect {
+    p:first-child {
+        margin-top: 0;
+    }
+    form {
+        margin-top: 30px;
+        strong {
+            margin-bottom: 30px;
+        }
+    }
+    input[type="text"] {
+        border-radius: 3px;
+        border: none;
+        outline: none;
+        line-height: 20px;
+        width: 230px;
+        margin-top: 10px;
+        padding: 4px 7px 3px;
+        font-size: 15px;
+    }
+    button {
+        line-height: 20px;
+        padding: 4px 7px 3px;
+        font-size: 15px;
+        background-color: @blue;
+        border: none;
+        border-radius: 3px;
+        color: @black;
+    }
+}
+
+.notification {
+    margin-top: 15px;
+}

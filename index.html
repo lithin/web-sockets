@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script async src="client.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <section>
+            <h1>WebSockets Playground</h1>
+            <div class="client column">
+                <div class="connect">
+                    <div class="intro">
+                        <p>This is a simple chat room using web sockets, created as a very basic playground for trying out the technology. It turned out developing with WS is fun, straight-forward but rather difficult to write proper unit tests for.</p>
+                        <p>You can read more about it here: <a href="">My Web Sockets Experience</a></p>
+                        <p>Wonder how exactly it works? See the source code on github.</p>
+                    </div>
+                    <form>
+                        <strong>Choose a username:</strong><br />
+                        <input type="text" />
+                        <button type="submit">Start</button>
+                    </form>
+                </div>
+                <div class="chat hidden">
+                    <ul class="room">
+                    </ul>
+                    <form>
+                        <input type="text" />
+                        <button type="submit">Send</button>
+                    </form>
+                    <button class="leave">Leave chat</button>
+                </div>
+                <div class="notification hidden">
+                </div>
+            </div>
+            <div class="client column">
+                <div class="connect">
+                    <div class="intro">
+                        <strong>It's super simple:</strong>
+                        <ul>
+                            <li>Select username</li>
+                            <li>Connect</li>
+                            <li>Start chatting</li>
+                            <li>Leave when you want to</li>
+                        </ul>
+                        <strong>What if nobody else's there?</strong>
+                        <ul>
+                            <li>Test it by creating two accounts on this page</li>
+                            <li>Or by creating accounts on different devices</li>
+                        </ul>
+                    </div>
+                    <form>
+                        <strong>Choose a username:</strong><br />
+                        <input type="text" />
+                        <button type="submit">Start</button>
+                    </form>
+                </div>
+                <div class="chat hidden">
+                    <ul class="room">
+                    </ul>
+                    <form>
+                        <input type="text" />
+                        <button type="submit">Send</button>
+                    </form>
+                    <button class="leave">Leave chat</button>
+                </div>
+                <div class="notification hidden">
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
